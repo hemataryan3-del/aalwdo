@@ -50,16 +50,26 @@
             font-size: 12px;
         }
 
-       <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="goals.html">Our Goals</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#developer">Developer</a></li>
-                </ul>
-            </nav>
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ff7f0e;
+        }
 
         /* Image Slider Section */
         .slider-container {
@@ -104,9 +114,7 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
 
-        .about-section { border-left: 6px solid #ff7f0e; }
         .goals-section { border-left: 6px solid #1e7e34; }
-        .projects-section { border-left: 6px solid #ff7f0e; }
         .contact-section { border-left: 6px solid #1e7e34; }
         
         /* Developer Section Style */
@@ -127,41 +135,6 @@
 
         .developer-section h2 {
             color: #ff7f0e;
-        }
-
-        .goals-list {
-            list-style-position: inside;
-            margin-top: 10px;
-        }
-
-        .goals-list li {
-            margin-bottom: 10px;
-            font-size: 16px;
-        }
-
-        .projects-grid {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .project-card {
-            background: #fdfdfd;
-            border: 1px solid #eee;
-            border-radius: 6px;
-            padding: 20px;
-            width: 48%;
-            margin-bottom: 15px;
-        }
-
-        @media (max-width: 768px) {
-            .project-card { width: 100%; }
-        }
-
-        .project-card h3 {
-            color: #1e7e34;
-            margin-bottom: 10px;
         }
 
         .contact-info {
@@ -219,10 +192,10 @@
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#goals">Our Goals</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="goals.html">Our Goals</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#developer">Developer</a></li>
                 </ul>
@@ -244,37 +217,6 @@
             <div class="caption">Development projects across Afghanistan</div>
         </div>
     </div>
-
-    <section id="about" class="section about-section">
-        <h2>About Us</h2>
-        <p><strong>AALWDO</strong> is a development organization operating in Afghanistan dedicated to improving people's living standards, creating alternative livelihoods, and fostering social welfare. We strive to provide sustainable livelihood opportunities and development paths for our citizens.</p>
-    </section>
-
-    <section id="goals" class="section goals-section">
-        <h2 class="orange-title">Our Core Goals & Vision</h2>
-        <p>AALWDO operates to achieve the following fundamental objectives:</p>
-        <ul class="goals-list">
-            <li>Providing sustainable alternative livelihoods for farmers and families in remote rural areas.</li>
-            <li>Implementing development projects to elevate health, education, and economic welfare in underprivileged communities.</li>
-            <li>Creating vocational training programs and employment opportunities for youth and women.</li>
-            <li>Delivering emergency humanitarian aid and support to vulnerable citizens during crises.</li>
-        </ul>
-    </section>
-
-    <section id="projects" class="section projects-section">
-        <h2>Our Projects</h2>
-        <p>Key sectors where we design and execute development and supporting projects:</p>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>1. Alternative Livelihood Project</h3>
-                <p>Training farmers in high-yield legitimate crop cultivation and distributing modern agricultural tools to empower their socio-economic resilience.</p>
-            </div>
-            <div class="project-card">
-                <h3>2. Social Welfare & Humanitarian Aid</h3>
-                <p>Providing food packages, essential winter relief items to impoverished families, and digging water wells for safe drinking water access.</p>
-            </div>
-        </div>
-    </section>
 
     <section id="contact" class="section contact-section">
         <h2 class="orange-title">Contact Us</h2>
@@ -306,7 +248,7 @@
     </section>
 
     <footer>
-        <p> AALWDO.©️ 2015 All Rights Reserved.</p>
+        <p>©️ 2015 AALWDO. All Rights Reserved.</p>
     </footer>
 
     <script>
